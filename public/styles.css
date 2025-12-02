@@ -261,7 +261,7 @@ body::before {
 
 /* Adjust nav pills for stuck state */
 .cv-nav.is-stuck .nav-pill {
-  padding: 0.5em 1.2em !important;
+  padding: 0.15em 1.2em !important;
   font-size: 0.9rem !important;
 }
 

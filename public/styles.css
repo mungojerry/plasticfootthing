@@ -149,6 +149,7 @@ body::before {
   background: linear-gradient(135deg, #22c55e 0%, var(--accent3) 50%, #14532d 100%);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   will-change: transform;
+  object-fit: cover;
 }
 
 @keyframes avatarPulse {

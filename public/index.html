@@ -3,19 +3,151 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>PM Site — Placeholder</title>
+  <title>Matthew Folkard CV</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>PM Site</h1>
+  <header class="cv-header">
+    <div class="header-bg">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none"><defs><linearGradient id="grad1" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#22c55e"/><stop offset="100%" stop-color="#14532d"/></linearGradient></defs><path fill="url(#grad1)" fill-opacity="0.5" d="M0,160L60,149.3C120,139,240,117,360,117.3C480,117,600,139,720,170.7C840,203,960,245,1080,229.3C1200,213,1320,139,1380,101.3L1440,64L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
+    </div>
+    <div class="header-content glass">
+      <img src="https://ui-avatars.com/api/?name=Matthew+Folkard&background=14532d&color=fff&size=140" alt="Matthew Folkard" class="avatar" />
+      <h1>Matthew Folkard</h1>
+      <h2>Senior Software Engineer</h2>
+      <p class="location"><span class="icon">📍</span> Bridge View, Garrigill, Alston, Cumbria, CA9 3DU</p>
+      <ul class="contact">
+        <li><span class="icon">☎️</span> 01434 382 174</li>
+        <li><span class="icon">📱</span> 07763 986 485</li>
+        <li><span class="icon">✉️</span> <a href="mailto:mfolkard@gmail.com">mfolkard@gmail.com</a></li>
+        <li><span class="icon">🚗</span> Clean UK Licence</li>
+        <li><span class="icon">🎂</span> Age: 50</li>
+      </ul>
+    </div>
   </header>
-  <main>
-    <p>This is a placeholder site. Replace this content with your project.</p>
-    <p>Files are served from the <code>public</code> folder and deployed by GitHub Actions.</p>
+  <main class="cv-main">
+    <section class="cv-section fade-in glass">
+      <h3>Core Skills</h3>
+      <ul class="skills">
+        <li><span class="icon">⚡</span> TypeScript, React, Vue, Angular, React Native</li>
+        <li><span class="icon">🧩</span> Component libraries & design systems</li>
+        <li><span class="icon">♿</span> Accessible, performant, WCAG-compliant UIs</li>
+        <li><span class="icon">🔗</span> State management (NgRx, Redux, custom stores)</li>
+        <li><span class="icon">🚀</span> CI/CD pipelines, cloud deployment, GitHub Actions</li>
+        <li><span class="icon">🧪</span> Automated testing, BDD, TDD</li>
+        <li><span class="icon">🤝</span> Team leadership, code reviews, mentoring</li>
+      </ul>
+    </section>
+    <section class="cv-section fade-in glass">
+      <h3>Employment</h3>
+      <div class="timeline">
+        <div class="job glass">
+          <span class="job-title">Senior Software Engineer</span>
+          <span class="job-company">Blue Beck Ltd.</span>
+          <span class="job-date">Aug 2023 - present</span>
+          <ul>
+            <li>React Native, TypeScript, nx, CI/CD (GitHub Actions)</li>
+            <li>Component-driven development, Storybook</li>
+            <li>Unit testing, BDD, code reviews</li>
+            <li>Legacy support & modernisation</li>
+          </ul>
+        </div>
+        <div class="job glass">
+          <span class="job-title">Senior Software Engineer</span>
+          <span class="job-company">i2 Group Ltd.</span>
+          <span class="job-date">Jul 2022 - Aug 2023</span>
+          <ul>
+            <li>React, TypeScript, analytics tools</li>
+            <li>Component development, unit testing</li>
+            <li>SDK design, shared components</li>
+          </ul>
+        </div>
+        <div class="job glass">
+          <span class="job-title">Lead Front End Developer</span>
+          <span class="job-company">DXC Technology</span>
+          <span class="job-date">Aug 2021 - Jul 2022</span>
+          <ul>
+            <li>Angular 10, TypeScript, NgRx</li>
+            <li>TDD-first, maintainable code</li>
+            <li>CI/CD (Jenkins), Swagger API</li>
+          </ul>
+        </div>
+        <div class="job glass">
+          <span class="job-title">Senior Front End Developer</span>
+          <span class="job-company">Digital Fibre Ltd.</span>
+          <span class="job-date">Feb 2018 - Aug 2021</span>
+          <ul>
+            <li>Angular, Ionic, TypeScript, Vue</li>
+            <li>Backend integrations (Laravel/Lumen)</li>
+            <li>Pixi.js interactive UI</li>
+          </ul>
+        </div>
+        <div class="job glass">
+          <span class="job-title">Senior Developer</span>
+          <span class="job-company">Matmi New Media Ltd.</span>
+          <span class="job-date">Jun 2016 - Feb 2018</span>
+          <ul>
+            <li>HTML5/JS/TS apps & games</li>
+            <li>Angular/Ionic, Node.js, CouchDB</li>
+            <li>Mentoring, multi-year projects</li>
+          </ul>
+        </div>
+        <div class="job glass">
+          <span class="job-title">Senior Programmer</span>
+          <span class="job-company">Penrillian Ltd.</span>
+          <span class="job-date">Mar 2016 - Jun 2016</span>
+          <ul>
+            <li>HTML5, JavaScript, Angular, Ionic</li>
+            <li>XP/TDD, maintainable code</li>
+            <li>Cross-functional collaboration</li>
+          </ul>
+        </div>
+        <div class="job glass">
+          <span class="job-title">Senior Software Engineer</span>
+          <span class="job-company">Inclusive Technology Ltd.</span>
+          <span class="job-date">Mar 2014 - Mar 2016</span>
+          <ul>
+            <li>Accessible HTML5/JS apps & games</li>
+            <li>Performance, responsiveness, WCAG</li>
+            <li>Clean, maintainable codebases</li>
+          </ul>
+        </div>
+        <div class="job glass">
+          <span class="job-title">Director & Freelance</span>
+          <span class="job-company">Plastic Martians Ltd.</span>
+          <span class="job-date">2001 - 2014</span>
+          <ul>
+            <li>HTML5 app design, Flash games</li>
+            <li>Multi-target mobile game dev</li>
+            <li>Clients: BBC, E4, P&G, F1, etc.</li>
+          </ul>
+        </div>
+        <div class="job glass">
+          <span class="job-title">Software Engineer / Lead Developer</span>
+          <span class="job-company">Various</span>
+          <span class="job-date">1996 - 2006</span>
+          <ul>
+            <li>Games, interactive media, mobile/web/Flash</li>
+            <li>Team lead, art coordination</li>
+            <li>Virtual agents research (PhD studentship)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="cv-section fade-in glass">
+      <h3>Education</h3>
+      <ul class="education">
+        <li><span class="icon">🎓</span> <strong>Centre for Virtual Environments (Salford University):</strong> PhD Studentship in Intelligent Virtual Agents (Jan 1999 – Oct 1999)</li>
+        <li><span class="icon">🎓</span> <strong>UMIST:</strong> B.Sc. Hons. in Computation (Oct 1993 – Jul 1996)</li>
+        <li><span class="icon">🏫</span> <strong>Newcastle Royal Grammar School:</strong> A-Levels (1983 – 1993)</li>
+      </ul>
+    </section>
   </main>
-  <footer>
-    <p>Deployed with GitHub Actions → GitHub Pages - test</p>
+  <footer class="cv-footer">
+    <p>Matthew Folkard &mdash; Senior Software Engineer &mdash; <a href="mailto:mfolkard@gmail.com">Contact</a></p>
   </footer>
 </body>
 </html>

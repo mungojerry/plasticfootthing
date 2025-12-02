@@ -16,3 +16,5 @@ Notes
 
 - If your repository's default branch is not `main`, update the workflow trigger.
 - To serve from the repository root instead of `public/`, move the site files and update the workflow `path` value.
+
+

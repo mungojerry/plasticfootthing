@@ -3,22 +3,24 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Matthew Folkard CV</title>
+  <meta name="description" content="Matthew Folkard - Senior Software Engineer specializing in React Native, TypeScript, Angular, and accessible web development. CV and portfolio.">
+  <title>Matthew Folkard - Senior Software Engineer | CV &amp; Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
   <header class="cv-header">
-    <div class="header-bg">
-      <svg class="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none"><defs><linearGradient id="grad1" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#22c55e"/><stop offset="100%" stop-color="#14532d"/></linearGradient></defs><path fill="url(#grad1)" fill-opacity="0.5" d="M0,160L60,149.3C120,139,240,117,360,117.3C480,117,600,139,720,170.7C840,203,960,245,1080,229.3C1200,213,1320,139,1380,101.3L1440,64L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
+    <div class="header-bg" aria-hidden="true">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none" role="presentation" aria-hidden="true"><defs><linearGradient id="grad1" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#22c55e"/><stop offset="100%" stop-color="#14532d"/></linearGradient></defs><path fill="url(#grad1)" fill-opacity="0.5" d="M0,160L60,149.3C120,139,240,117,360,117.3C480,117,600,139,720,170.7C840,203,960,245,1080,229.3C1200,213,1320,139,1380,101.3L1440,64L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
     </div>
     <div class="header-content glass">
       <img src="img/matt.jpg" alt="Matthew Folkard" class="avatar" />
       <h1>Matthew Folkard</h1>
       <h2>Senior Software Engineer</h2>
-      <nav class="cv-nav">
+      <nav class="cv-nav" aria-label="CV sections navigation">
         <a href="#skills" class="nav-pill">Core Skills</a>
         <a href="#employment" class="nav-pill">Employment</a>
         <a href="#projects" class="nav-pill">Projects</a>
@@ -27,21 +29,21 @@
       </nav>
     </div>
   </header>
-  <main class="cv-main">
-    <section id="skills" class="cv-section">
-      <h3>Core Skills</h3>
+  <main id="main-content" class="cv-main" role="main" aria-label="CV Content">
+    <section id="skills" class="cv-section" aria-labelledby="skills-heading">
+      <h3 id="skills-heading">Core Skills</h3>
       <ul class="skills">
-        <li><span class="icon">⚡</span> TypeScript, React, Vue, Angular, React Native</li>
-        <li><span class="icon">🧩</span> Component libraries & design systems</li>
-        <li><span class="icon">♿</span> Accessible, performant, WCAG-compliant UIs</li>
-        <li><span class="icon">🔗</span> State management (NgRx, Redux, custom stores)</li>
-        <li><span class="icon">🚀</span> CI/CD pipelines, cloud deployment, GitHub Actions</li>
-        <li><span class="icon">🧪</span> Automated testing, BDD, TDD</li>
-        <li><span class="icon">🤝</span> Team leadership, code reviews, mentoring</li>
+        <li><span class="icon" aria-hidden="true">⚡</span> TypeScript, React, Vue, Angular, React Native</li>
+        <li><span class="icon" aria-hidden="true">🧩</span> Component libraries & design systems</li>
+        <li><span class="icon" aria-hidden="true">♿</span> Accessible, performant, WCAG-compliant UIs</li>
+        <li><span class="icon" aria-hidden="true">🔗</span> State management (NgRx, Redux, custom stores)</li>
+        <li><span class="icon" aria-hidden="true">🚀</span> CI/CD pipelines, cloud deployment, GitHub Actions</li>
+        <li><span class="icon" aria-hidden="true">🧪</span> Automated testing, BDD, TDD</li>
+        <li><span class="icon" aria-hidden="true">🤝</span> Team leadership, code reviews, mentoring</li>
       </ul>
     </section>
-    <section id="employment" class="cv-section">
-      <h3>Employment</h3>
+    <section id="employment" class="cv-section" aria-labelledby="employment-heading">
+      <h3 id="employment-heading">Employment</h3>
       <div class="timeline">
         <div class="job">
           <span class="job-title">Senior Software Engineer</span>
@@ -136,8 +138,8 @@
         </div>
       </div>
     </section>
-    <section id="projects" class="cv-section">
-      <h3>Featured Projects</h3>
+    <section id="projects" class="cv-section" aria-labelledby="projects-heading">
+      <h3 id="projects-heading">Featured Projects</h3>
       <div class="projects-grid">
         <div class="project-card">
           <img src="img/portfolio/smarty.png" alt="Blue Beck Smarty App" class="project-img">
@@ -177,40 +179,40 @@
         </div>
       </div>
     </section>
-    <section id="education" class="cv-section">
-      <h3>Education</h3>
+    <section id="education" class="cv-section" aria-labelledby="education-heading">
+      <h3 id="education-heading">Education</h3>
       <ul class="education">
-        <li><span class="icon">🎓</span> <strong>Centre for Virtual Environments (Salford University):</strong> PhD Studentship in Intelligent Virtual Agents (Jan 1999 – Oct 1999)</li>
-        <li><span class="icon">🎓</span> <strong>UMIST:</strong> B.Sc. Hons. in Computation (Oct 1993 – Jul 1996)</li>
-        <li><span class="icon">🏫</span> <strong>Newcastle Royal Grammar School:</strong> A-Levels (1983 – 1993)</li>
+        <li><span class="icon" aria-hidden="true">🎓</span> <strong>Centre for Virtual Environments (Salford University):</strong> PhD Studentship in Intelligent Virtual Agents (Jan 1999 – Oct 1999)</li>
+        <li><span class="icon" aria-hidden="true">🎓</span> <strong>UMIST:</strong> B.Sc. Hons. in Computation (Oct 1993 – Jul 1996)</li>
+        <li><span class="icon" aria-hidden="true">🏫</span> <strong>Newcastle Royal Grammar School:</strong> A-Levels (1983 – 1993)</li>
       </ul>
     </section>
-    <section id="personal" class="cv-section">
-      <h3>Personal Details</h3>
+    <section id="personal" class="cv-section" aria-labelledby="personal-heading">
+      <h3 id="personal-heading">Personal Details</h3>
       <div class="personal-details">
         <div class="detail-item">
-          <span class="icon">📱</span>
+          <span class="icon" aria-hidden="true">📱</span>
           <div>
             <strong>Mobile</strong>
             <p>07763 986 485</p>
           </div>
         </div>
         <div class="detail-item">
-          <span class="icon">✉️</span>
+          <span class="icon" aria-hidden="true">✉️</span>
           <div>
             <strong>Email</strong>
             <p><a href="mailto:mfolkard@gmail.com">mfolkard@gmail.com</a></p>
           </div>
         </div>
         <div class="detail-item">
-          <span class="icon">🚗</span>
+          <span class="icon" aria-hidden="true">🚗</span>
           <div>
             <strong>Driving</strong>
             <p>Clean UK Licence</p>
           </div>
         </div>
         <div class="detail-item">
-          <span class="icon">🎂</span>
+          <span class="icon" aria-hidden="true">🎂</span>
           <div>
             <strong>Age</strong>
             <p>50</p>
@@ -219,8 +221,8 @@
       </div>
     </section>
   </main>
-  <footer class="cv-footer">
-    <p>Matthew Folkard &mdash; Senior Software Engineer &mdash; <a href="mailto:mfolkard@gmail.com">Contact</a></p>
+  <footer class="cv-footer" role="contentinfo">
+    <p>Matthew Folkard &mdash; Senior Software Engineer &mdash; <a href="mailto:mfolkard@gmail.com" aria-label="Contact Matthew Folkard via email">Contact</a></p>
   </footer>
 </body>
 </html>

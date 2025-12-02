@@ -192,16 +192,6 @@ body::before {
   100% { transform: translateY(0); opacity: 1; }
 }
 
-.location {
-  font-size: 1.1rem;
-  color: var(--accent);
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
-}
-
 .icon {
   font-size: 1.2em;
   margin-right: 0.3em;
@@ -246,49 +236,6 @@ body::before {
   box-shadow: 0 6px 20px rgba(34, 197, 94, 0.4);
   border-color: rgba(255, 255, 255, 0.8);
   animation: wobble 0.5s ease;
-}
-
-.contact {
-  list-style: none;
-  padding: 0;
-  margin: 1rem 0 0 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
-  font-size: 1.05rem;
-}
-
-.contact li {
-  opacity: 0.98;
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(230, 244, 234, 0.9) 100%);
-  border-radius: 2rem;
-  padding: 0.5em 1em;
-  box-shadow: 0 2px 8px rgba(20, 83, 45, 0.15);
-  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease, color 0.3s ease;
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  will-change: transform;
-}
-
-.contact li:hover {
-  box-shadow: 0 6px 20px rgba(34, 197, 94, 0.3);
-  background: linear-gradient(135deg, #22c55e 0%, var(--accent3) 100%);
-  color: white;
-  transform: translateY(-3px) scale(1.05);
-  animation: wobble 0.5s ease;
-}
-
-@keyframes wobble {
-  0%, 100% { transform: translateY(-3px) scale(1.05) rotate(0deg); }
-  25% { transform: translateY(-3px) scale(1.05) rotate(-2deg); }
-  75% { transform: translateY(-3px) scale(1.05) rotate(2deg); }
-}
-
-.contact li:hover a {
-  color: white;
 }
 
 .cv-main {
@@ -341,14 +288,11 @@ body::before {
   transform: scaleX(1);
 }
 
-.cv-section.fade-in {
-  opacity: 1;
-}
-
 .cv-section:nth-child(1) { animation-delay: 0.2s; }
 .cv-section:nth-child(2) { animation-delay: 0.4s; }
 .cv-section:nth-child(3) { animation-delay: 0.6s; }
 .cv-section:nth-child(4) { animation-delay: 0.8s; }
+.cv-section:nth-child(5) { animation-delay: 1s; }
 
 @keyframes fadeInUp {
   0% { opacity: 0; transform: translateY(50px) scale(0.95); }
@@ -632,17 +576,6 @@ body::before {
   box-shadow: 0 8px 20px rgba(20, 83, 45, 0.25);
 }
 
-.project-icon {
-  font-size: 3.5rem;
-  margin-bottom: 1rem;
-  animation: iconFloat 3s ease-in-out infinite;
-  display: inline-block;
-}
-
-.project-card:hover .project-icon {
-  animation: bounce 0.6s ease;
-}
-
 .project-card h4 {
   font-size: 1.4rem;
   font-weight: 700;
@@ -819,10 +752,10 @@ a:hover {
   .cv-section { padding: 1.5rem; }
   .header-content { padding: 1.5rem; }
   .skills { grid-template-columns: 1fr; }
-  .contact { gap: 0.7rem; font-size: 0.95rem; }
   .avatar { width: 110px; height: 110px; }
   .timeline::before { left: 0.5rem; }
   .job { margin-left: 2.5rem; padding-left: 1.5rem; }
   .job::before { left: -2.1rem; }
   .projects-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+  .personal-details { grid-template-columns: 1fr; }
 }

@@ -1,326 +1,587 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Matthew Folkard - Senior Software Engineer specializing in React Native, TypeScript, Angular, and accessible web development. CV and portfolio.">
-  <title>Matthew Folkard - Senior Software Engineer | CV &amp; Portfolio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <a href="#main-content" class="skip-link">Skip to main content</a>
-  <header class="cv-header">
-    <div class="header-content glass">
-      <img src="img/matt.jpg" alt="Matthew Folkard, profile photograph" class="avatar" />
-      <h1>Matthew Folkard</h1>
-      <p class="subtitle">Senior Software Engineer</p>
-    </div>
-  </header>
-  <nav class="cv-nav" aria-label="CV sections navigation">
-    <a href="#skills" class="nav-pill">Core Skills</a>
-    <a href="#employment" class="nav-pill">Employment</a>
-    <a href="#projects" class="nav-pill">Projects</a>
-    <a href="#education" class="nav-pill">Education</a>
-    <a href="#personal" class="nav-pill">Personal Details</a>
-  </nav>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Matthew Folkard - Senior Software Engineer specializing in React Native, TypeScript, Angular, and accessible web development. CV and portfolio."
+    />
+    <title>
+      Matthew Folkard - Senior Software Engineer | CV &amp; Portfolio
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <header class="cv-header">
+      <div class="header-content glass">
+        <img
+          src="img/matt.jpg"
+          alt="Matthew Folkard, profile photograph"
+          class="avatar"
+        />
+        <h1>Matthew Folkard</h1>
+        <p class="subtitle">Senior Software Engineer</p>
+      </div>
+    </header>
+    <nav class="cv-nav" aria-label="CV sections navigation">
+      <a href="#skills" class="nav-pill">Core Skills</a>
+      <a href="#employment" class="nav-pill">Employment</a>
+      <a href="#projects" class="nav-pill">Projects</a>
+      <a href="#education" class="nav-pill">Education</a>
+      <a href="#personal" class="nav-pill">Personal Details</a>
+    </nav>
 
-  <!-- Burger menu button for mobile -->
-  <button class="burger-menu" aria-label="Open menu" aria-controls="mobile-nav" aria-expanded="false">
-    <span class="burger-bar"></span>
-    <span class="burger-bar"></span>
-    <span class="burger-bar"></span>
-  </button>
+    <!-- Burger menu button for mobile -->
+    <button
+      class="burger-menu"
+      aria-label="Open menu"
+      aria-controls="mobile-nav"
+      aria-expanded="false"
+    >
+      <span class="burger-bar"></span>
+      <span class="burger-bar"></span>
+      <span class="burger-bar"></span>
+    </button>
 
-  <!-- Mobile navigation overlay -->
-  <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile CV sections navigation">
-    <button class="close-mobile-nav" aria-label="Close menu">&times;</button>
-    <a href="#skills" class="nav-pill">Core Skills</a>
-    <a href="#employment" class="nav-pill">Employment</a>
-    <a href="#projects" class="nav-pill">Projects</a>
-    <a href="#education" class="nav-pill">Education</a>
-    <a href="#personal" class="nav-pill">Personal Details</a>
-  </nav>
-  <main id="main-content" class="cv-main" role="main" aria-label="CV Content">
-    <h2 class="visually-hidden">Professional Experience and Qualifications</h2>
-    <section id="skills" class="cv-section" aria-labelledby="skills-heading">
-      <h3 id="skills-heading">Core Skills</h3>
-      <ul class="skills">
-        <li>
-          <span class="icon" aria-hidden="true" style="-webkit-mask-image: url('icons/lightning.svg'); mask-image: url('icons/lightning.svg');">
-            <img src="icons/lightning.svg" width="36" height="36" alt="" />
-          </span>
-          TypeScript, React, Vue, Angular, React Native
-        </li>
-        <li>
-          <span class="icon" aria-hidden="true" style="-webkit-mask-image: url('icons/puzzle.svg'); mask-image: url('icons/puzzle.svg');">
-            <img src="icons/puzzle.svg" width="36" height="36" alt="" />
-          </span>
-          Component libraries & design systems
-        </li>
-        <li>
-          <span class="icon" aria-hidden="true" style="-webkit-mask-image: url('icons/clock.svg'); mask-image: url('icons/clock.svg');">
-            <img src="icons/clock.svg" width="36" height="36" alt="" />
-          </span>
-          Accessible, performant, WCAG-compliant UIs
-        </li>
-        <li>
-          <span class="icon" aria-hidden="true" style="-webkit-mask-image: url('icons/link.svg'); mask-image: url('icons/link.svg');">
-            <img src="icons/link.svg" width="36" height="36" alt="" />
-          </span>
-          State management (NgRx, Redux, custom stores)
-        </li>
-        <li>
-          <span class="icon" aria-hidden="true" style="-webkit-mask-image: url('icons/checkmark.svg'); mask-image: url('icons/checkmark.svg');">
-            <img src="icons/checkmark.svg" width="36" height="36" alt="" />
-          </span>
-          CI/CD pipelines, cloud deployment, GitHub Actions
-        </li>
-        <li>
-          <span class="icon" aria-hidden="true" style="-webkit-mask-image: url('icons/test-tube.svg'); mask-image: url('icons/test-tube.svg');">
-            <img src="icons/test-tube.svg" width="36" height="36" alt="" />
-          </span>
-          Automated testing, BDD, TDD
-        </li>
-        <li>
-          <span class="icon" aria-hidden="true" style="-webkit-mask-image: url('icons/handshake.svg'); mask-image: url('icons/handshake.svg');">
-            <img src="icons/handshake.svg" width="36" height="36" alt="" />
-          </span>
-          Team leadership, code reviews, mentoring
-        </li>
-      </ul>
-    </section>
-    <section id="employment" class="cv-section" aria-labelledby="employment-heading">
-      <h3 id="employment-heading">Employment</h3>
-      <div class="timeline">
-        <div class="job">
-          <span class="job-title">Senior Software Engineer</span>
-          <span class="job-company">Blue Beck Ltd.</span>
-          <span class="job-date">Aug 2023 - present</span>
-          <ul>
-            <li>React Native, TypeScript, nx, CI/CD (GitHub Actions)</li>
-            <li>Component-driven development, Storybook</li>
-            <li>Unit testing, BDD, code reviews</li>
-            <li>Legacy support & modernisation</li>
-          </ul>
-        </div>
-        <div class="job">
-          <span class="job-title">Senior Software Engineer</span>
-          <span class="job-company">i2 Group Ltd.</span>
-          <span class="job-date">Jul 2022 - Aug 2023</span>
-          <ul>
-            <li>React, TypeScript, analytics tools</li>
-            <li>Component development, unit testing</li>
-            <li>SDK design, shared components</li>
-          </ul>
-        </div>
-        <div class="job">
-          <span class="job-title">Lead Front End Developer</span>
-          <span class="job-company">DXC Technology</span>
-          <span class="job-date">Aug 2021 - Jul 2022</span>
-          <ul>
-            <li>Angular 10, TypeScript, NgRx</li>
-            <li>TDD-first, maintainable code</li>
-            <li>CI/CD (Jenkins), Swagger API</li>
-          </ul>
-        </div>
-        <div class="job">
-          <span class="job-title">Senior Front End Developer</span>
-          <span class="job-company">Digital Fibre Ltd.</span>
-          <span class="job-date">Feb 2018 - Aug 2021</span>
-          <ul>
-            <li>Angular, Ionic, TypeScript, Vue</li>
-            <li>Backend integrations (Laravel/Lumen)</li>
-            <li>Pixi.js interactive UI</li>
-          </ul>
-        </div>
-        <div class="job">
-          <span class="job-title">Senior Developer</span>
-          <span class="job-company">Matmi New Media Ltd.</span>
-          <span class="job-date">Jun 2016 - Feb 2018</span>
-          <ul>
-            <li>HTML5/JS/TS apps & games</li>
-            <li>Angular/Ionic, Node.js, CouchDB</li>
-            <li>Mentoring, multi-year projects</li>
-          </ul>
-        </div>
-        <div class="job">
-          <span class="job-title">Senior Programmer</span>
-          <span class="job-company">Penrillian Ltd.</span>
-          <span class="job-date">Mar 2016 - Jun 2016</span>
-          <ul>
-            <li>HTML5, JavaScript, Angular, Ionic</li>
-            <li>XP/TDD, maintainable code</li>
-            <li>Cross-functional collaboration</li>
-          </ul>
-        </div>
-        <div class="job">
-          <span class="job-title">Senior Software Engineer</span>
-          <span class="job-company">Inclusive Technology Ltd.</span>
-          <span class="job-date">Mar 2014 - Mar 2016</span>
-          <ul>
-            <li>Accessible HTML5/JS apps & games</li>
-            <li>Performance, responsiveness, WCAG</li>
-            <li>Clean, maintainable codebases</li>
-          </ul>
-        </div>
-        <div class="job">
-          <span class="job-title">Director & Freelance</span>
-          <span class="job-company">Plastic Martians Ltd.</span>
-          <span class="job-date">2001 - 2014</span>
-          <ul>
-            <li>HTML5 app design, Flash games</li>
-            <li>Multi-target mobile game dev</li>
-            <li>Clients: BBC, E4, P&G, F1, etc.</li>
-          </ul>
-        </div>
-        <div class="job">
-          <span class="job-title">Software Engineer / Lead Developer</span>
-          <span class="job-company">Various</span>
-          <span class="job-date">1996 - 2006</span>
-          <ul>
-            <li>Games, interactive media, mobile/web/Flash</li>
-            <li>Team lead, art coordination</li>
-            <li>Virtual agents research (PhD studentship)</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <section id="projects" class="cv-section" aria-labelledby="projects-heading">
-      <h3 id="projects-heading">Featured Projects</h3>
-      <div class="projects-grid">
-        <div class="project-card">
-          <img src="img/portfolio/smarty.png" alt="Blue Beck Smarty App" class="project-img">
-          <h4>Blue Beck Smarty App</h4>
-          <p>React Native mobile application for mobile phone management</p>
-          <span class="project-tech">React Native • TypeScript • nx • Firebase</span>
-        </div>
-        <div class="project-card">
-          <img src="img/portfolio/i2.png" alt="i2 Group Analytics Platform" class="project-img">
-          <h4>i2 Group Analytics Platform</h4>
-          <p>Advanced data visualization and analytics tools for intelligence and investigation workflows</p>
-          <span class="project-tech">React • TypeScript • D3.js</span>
-        </div>
-        <div class="project-card">
-          <img src="img/portfolio/rugby.jpg" alt="Rugby Coaching App" class="project-img">
-          <h4>RFU Presentation Tool</h4>
-          <p>RFU Presentation tool designed to be accessibile for trainers and demonstrators</p>
-          <span class="project-tech">Flash • Actionscript 3 • AIR</span>
-        </div>
-        <div class="project-card">
-          <img src="img/portfolio/sarahandduck.jpg" alt="BBC Sarah and Duck" class="project-img">
-          <h4>BBC Sarah and Duck</h4>
-          <p>Interactive educational games and activities for preschool children featuring the popular BBC characters</p>
-          <span class="project-tech">HTML5 • JavaScript • Animation</span>
-        </div>
-        <div class="project-card">
-          <img src="img/portfolio/extremeironing.jpg" alt="Extreme Ironing Game" class="project-img">
-          <h4>Extreme Ironing Game</h4>
-          <p>Quirky physics-based Flash game featuring extreme sports and ironing challenges</p>
-          <span class="project-tech">Flash • ActionScript 3 • Physics</span>
-        </div>
-        <div class="project-card">
-          <img src="img/portfolio/plasticchristmas.jpg" alt="Plastic Christmas" class="project-img">
-          <h4>Plastic Christmas</h4>
-          <p>Seasonal interactive entertainment and games developed to demonstrate major brand campaigns</p>
-          <span class="project-tech">Flash • Actionscript 3 • Physics</span>
-        </div>
-        <div class="project-card project-collage">
-          <div class="collage-grid">
-            <img src="img/portfolio/screen__0000_scr.jpg" alt="Project screenshot">
-            <img src="img/portfolio/screen__0003_scr.jpg" alt="Project screenshot">
-            <img src="img/portfolio/screen__0004_scr.jpg" alt="Project screenshot">
-            <img src="img/portfolio/screen__0005_scr.jpg" alt="Project screenshot">
-            <img src="img/portfolio/screen__0006_scr.jpg" alt="Project screenshot">
-            <img src="img/portfolio/screen__0007_scr.jpg" alt="Project screenshot">
-            <img src="img/portfolio/screen__0008_scr.jpg" alt="Project screenshot">
-            <img src="img/portfolio/screen__0009_scr.jpg" alt="Project screenshot">
-            <img src="img/portfolio/screen__0010_scr.jpg" alt="Project screenshot">
-            <img src="img/portfolio/screen__0011_scr.jpg" alt="Project screenshot">
-            <img src="img/portfolio/screen__0012_scr.jpg" alt="Project screenshot">
-            <img src="img/portfolio/screen__0013_scr.jpg" alt="Project screenshot">
-            <img src="img/portfolio/screen__0014_scr.jpg" alt="Project screenshot">
-            <img src="img/portfolio/screen__0015_scr.jpg" alt="Project screenshot">
-            <img src="img/portfolio/screen__0016_scr.jpg" alt="Project screenshot">
-            <img src="img/portfolio/screen__0018_scr.jpg" alt="Project screenshot">
-            <img src="img/portfolio/screen__0019_scr.jpg" alt="Project screenshot">
-            <img src="img/portfolio/screen__0020_scr.jpg" alt="Project screenshot">
-            <img src="img/portfolio/screen__0021_scr.jpg" alt="Project screenshot">
-            <img src="img/portfolio/screen__0022_scr.jpg" alt="Project screenshot">
+    <!-- Mobile navigation overlay -->
+    <nav
+      id="mobile-nav"
+      class="mobile-nav"
+      aria-label="Mobile CV sections navigation"
+    >
+      <button class="close-mobile-nav" aria-label="Close menu">&times;</button>
+      <a href="#skills" class="nav-pill">Core Skills</a>
+      <a href="#employment" class="nav-pill">Employment</a>
+      <a href="#projects" class="nav-pill">Projects</a>
+      <a href="#education" class="nav-pill">Education</a>
+      <a href="#personal" class="nav-pill">Personal Details</a>
+    </nav>
+    <main id="main-content" class="cv-main" role="main" aria-label="CV Content">
+      <h2 class="visually-hidden">
+        Professional Experience and Qualifications
+      </h2>
+      <section id="skills" class="cv-section" aria-labelledby="skills-heading">
+        <h3 id="skills-heading">Core Skills</h3>
+        <ul class="skills">
+          <li>
+            <span
+              class="icon"
+              aria-hidden="true"
+              style="
+                -webkit-mask-image: url('icons/lightning.svg');
+                mask-image: url('icons/lightning.svg');
+              "
+            >
+              <img src="icons/lightning.svg" width="36" height="36" alt="" />
+            </span>
+            TypeScript, React, Vue, Angular, React Native
+          </li>
+          <li>
+            <span
+              class="icon"
+              aria-hidden="true"
+              style="
+                -webkit-mask-image: url('icons/puzzle.svg');
+                mask-image: url('icons/puzzle.svg');
+              "
+            >
+              <img src="icons/puzzle.svg" width="36" height="36" alt="" />
+            </span>
+            Component libraries & design systems
+          </li>
+          <li>
+            <span
+              class="icon"
+              aria-hidden="true"
+              style="
+                -webkit-mask-image: url('icons/clock.svg');
+                mask-image: url('icons/clock.svg');
+              "
+            >
+              <img src="icons/clock.svg" width="36" height="36" alt="" />
+            </span>
+            Accessible, performant, WCAG-compliant UIs
+          </li>
+          <li>
+            <span
+              class="icon"
+              aria-hidden="true"
+              style="
+                -webkit-mask-image: url('icons/link.svg');
+                mask-image: url('icons/link.svg');
+              "
+            >
+              <img src="icons/link.svg" width="36" height="36" alt="" />
+            </span>
+            State management (NgRx, Redux, custom stores)
+          </li>
+          <li>
+            <span
+              class="icon"
+              aria-hidden="true"
+              style="
+                -webkit-mask-image: url('icons/checkmark.svg');
+                mask-image: url('icons/checkmark.svg');
+              "
+            >
+              <img src="icons/checkmark.svg" width="36" height="36" alt="" />
+            </span>
+            CI/CD pipelines, cloud deployment, GitHub Actions
+          </li>
+          <li>
+            <span
+              class="icon"
+              aria-hidden="true"
+              style="
+                -webkit-mask-image: url('icons/test-tube.svg');
+                mask-image: url('icons/test-tube.svg');
+              "
+            >
+              <img src="icons/test-tube.svg" width="36" height="36" alt="" />
+            </span>
+            Automated testing, BDD, TDD
+          </li>
+          <li>
+            <span
+              class="icon"
+              aria-hidden="true"
+              style="
+                -webkit-mask-image: url('icons/handshake.svg');
+                mask-image: url('icons/handshake.svg');
+              "
+            >
+              <img src="icons/handshake.svg" width="36" height="36" alt="" />
+            </span>
+            Team leadership, code reviews, mentoring
+          </li>
+        </ul>
+      </section>
+      <section
+        id="employment"
+        class="cv-section"
+        aria-labelledby="employment-heading"
+      >
+        <h3 id="employment-heading">Employment</h3>
+        <div class="timeline">
+          <div class="job">
+            <span class="job-title">Senior Software Engineer</span>
+            <span class="job-company">Blue Beck Ltd.</span>
+            <span class="job-date">Aug 2023 - present</span>
+            <ul>
+              <li>React Native, TypeScript, nx, CI/CD (GitHub Actions)</li>
+              <li>Component-driven development, Storybook</li>
+              <li>Unit testing, BDD, code reviews</li>
+              <li>Legacy support & modernisation</li>
+            </ul>
+          </div>
+          <div class="job">
+            <span class="job-title">Senior Software Engineer</span>
+            <span class="job-company">i2 Group Ltd.</span>
+            <span class="job-date">Jul 2022 - Aug 2023</span>
+            <ul>
+              <li>React, TypeScript, analytics tools</li>
+              <li>Component development, unit testing</li>
+              <li>SDK design, shared components</li>
+            </ul>
+          </div>
+          <div class="job">
+            <span class="job-title">Lead Front End Developer</span>
+            <span class="job-company">DXC Technology</span>
+            <span class="job-date">Aug 2021 - Jul 2022</span>
+            <ul>
+              <li>Angular 10, TypeScript, NgRx</li>
+              <li>TDD-first, maintainable code</li>
+              <li>CI/CD (Jenkins), Swagger API</li>
+            </ul>
+          </div>
+          <div class="job">
+            <span class="job-title">Senior Front End Developer</span>
+            <span class="job-company">Digital Fibre Ltd.</span>
+            <span class="job-date">Feb 2018 - Aug 2021</span>
+            <ul>
+              <li>Angular, Ionic, TypeScript, Vue</li>
+              <li>Backend integrations (Laravel/Lumen)</li>
+              <li>Pixi.js interactive UI</li>
+            </ul>
+          </div>
+          <div class="job">
+            <span class="job-title">Senior Developer</span>
+            <span class="job-company">Matmi New Media Ltd.</span>
+            <span class="job-date">Jun 2016 - Feb 2018</span>
+            <ul>
+              <li>HTML5/JS/TS apps & games</li>
+              <li>Angular/Ionic, Node.js, CouchDB</li>
+              <li>Mentoring, multi-year projects</li>
+            </ul>
+          </div>
+          <div class="job">
+            <span class="job-title">Senior Programmer</span>
+            <span class="job-company">Penrillian Ltd.</span>
+            <span class="job-date">Mar 2016 - Jun 2016</span>
+            <ul>
+              <li>HTML5, JavaScript, Angular, Ionic</li>
+              <li>XP/TDD, maintainable code</li>
+              <li>Cross-functional collaboration</li>
+            </ul>
+          </div>
+          <div class="job">
+            <span class="job-title">Senior Software Engineer</span>
+            <span class="job-company">Inclusive Technology Ltd.</span>
+            <span class="job-date">Mar 2014 - Mar 2016</span>
+            <ul>
+              <li>Accessible HTML5/JS apps & games</li>
+              <li>Performance, responsiveness, WCAG</li>
+              <li>Clean, maintainable codebases</li>
+            </ul>
+          </div>
+          <div class="job">
+            <span class="job-title">Director & Freelance</span>
+            <span class="job-company">Plastic Martians Ltd.</span>
+            <span class="job-date">2001 - 2014</span>
+            <ul>
+              <li>HTML5 app design, Flash games</li>
+              <li>Multi-target mobile game dev</li>
+              <li>Clients: BBC, E4, P&G, F1, etc.</li>
+            </ul>
+          </div>
+          <div class="job">
+            <span class="job-title">Software Engineer / Lead Developer</span>
+            <span class="job-company">Various</span>
+            <span class="job-date">1996 - 2006</span>
+            <ul>
+              <li>Games, interactive media, mobile/web/Flash</li>
+              <li>Team lead, art coordination</li>
+              <li>Virtual agents research (PhD studentship)</li>
+            </ul>
           </div>
         </div>
-      </div>
-    </section>
-    <section id="education" class="cv-section" aria-labelledby="education-heading">
-      <h3 id="education-heading">Education</h3>
-      <ul class="education">
-        <li>
-          <span class="icon" aria-hidden="true" style="-webkit-mask-image: url('icons/graduation-cap.svg'); mask-image: url('icons/graduation-cap.svg');">
-            <img src="icons/graduation-cap.svg" width="36" height="36" alt="" />
-          </span>
-          <strong>Centre for Virtual Environments (Salford University):</strong> PhD Studentship in Intelligent Virtual Agents (Jan 1999 – Oct 1999)
-        </li>
-        <li>
-          <span class="icon" aria-hidden="true" style="-webkit-mask-image: url('icons/graduation-cap.svg'); mask-image: url('icons/graduation-cap.svg');">
-            <img src="icons/graduation-cap.svg" width="36" height="36" alt="" />
-          </span>
-          <strong>UMIST:</strong> B.Sc. Hons. in Computation (Oct 1993 – Jul 1996)
-        </li>
-        <li>
-          <span class="icon" aria-hidden="true" style="-webkit-mask-image: url('icons/school.svg'); mask-image: url('icons/school.svg');">
-            <img src="icons/school.svg" width="36" height="36" alt="" />
-          </span>
-          <strong>Newcastle Royal Grammar School:</strong> A-Levels (1983 – 1993)
-        </li>
-      </ul>
-    </section>
-    <section id="personal" class="cv-section" aria-labelledby="personal-heading">
-      <h3 id="personal-heading">Personal Details</h3>
-      <div class="personal-details">
-        <div class="detail-item">
-          <span class="icon" aria-hidden="true" style="-webkit-mask-image: url('icons/mobile.svg'); mask-image: url('icons/mobile.svg');">
-            <img src="icons/mobile.svg" width="36" height="36" alt="" />
-          </span>
-          <div>
-            <strong>Mobile</strong>
-            <p>07763 986 485</p>
+      </section>
+      <section
+        id="projects"
+        class="cv-section"
+        aria-labelledby="projects-heading"
+      >
+        <h3 id="projects-heading">Featured Projects</h3>
+        <div class="projects-grid">
+          <div class="project-card">
+            <img
+              src="img/portfolio/smarty.png"
+              alt="Blue Beck Smarty App"
+              class="project-img"
+            />
+            <h4>Blue Beck Smarty App</h4>
+            <p>React Native mobile application for mobile phone management</p>
+            <span class="project-tech"
+              >React Native • TypeScript • nx • Firebase</span
+            >
+          </div>
+          <div class="project-card">
+            <img
+              src="img/portfolio/i2.png"
+              alt="i2 Group Analytics Platform"
+              class="project-img"
+            />
+            <h4>i2 Group Analytics Platform</h4>
+            <p>
+              Advanced data visualization and analytics tools for intelligence
+              and investigation workflows
+            </p>
+            <span class="project-tech">React • TypeScript • D3.js</span>
+          </div>
+
+          <div class="project-card">
+            <img
+              src="img/portfolio/sarahandduck.jpg"
+              alt="BBC Sarah and Duck"
+              class="project-img"
+            />
+            <h4>BBC Sarah and Duck</h4>
+            <p>
+              Interactive educational games and activities for preschool
+              children featuring the popular BBC characters
+            </p>
+            <span class="project-tech">HTML5 • JavaScript • Animation</span>
+          </div>
+          <div class="project-card">
+            <img
+              src="img/portfolio/rugby.jpg"
+              alt="Rugby Coaching App"
+              class="project-img"
+            />
+            <h4>RFU Presentation Tool</h4>
+            <p>
+              RFU Presentation tool designed to be accessibile for trainers and
+              demonstrators
+            </p>
+            <span class="project-tech">Flash • Actionscript 3 • AIR</span>
+          </div>
+          <div class="project-card">
+            <img
+              src="img/portfolio/extremeironing.jpg"
+              alt="Extreme Ironing Game"
+              class="project-img"
+            />
+            <h4>Extreme Ironing Game</h4>
+            <p>
+              Quirky physics-based Flash game featuring extreme sports and
+              ironing challenges
+            </p>
+            <span class="project-tech">Flash • ActionScript 3 • Physics</span>
+          </div>
+          <div class="project-card">
+            <img
+              src="img/portfolio/plasticchristmas.jpg"
+              alt="Plastic Christmas"
+              class="project-img"
+            />
+            <h4>Plastic Christmas</h4>
+            <p>
+              Seasonal interactive entertainment and games developed to
+              demonstrate major brand campaigns
+            </p>
+            <span class="project-tech">Flash • Actionscript 3 • Physics</span>
+          </div>
+          <div class="project-card project-collage">
+            <div class="collage-grid">
+              <img
+                src="img/portfolio/screen__0000_scr.jpg"
+                alt="Project screenshot"
+              />
+              <img
+                src="img/portfolio/screen__0003_scr.jpg"
+                alt="Project screenshot"
+              />
+              <img
+                src="img/portfolio/screen__0004_scr.jpg"
+                alt="Project screenshot"
+              />
+              <img
+                src="img/portfolio/screen__0005_scr.jpg"
+                alt="Project screenshot"
+              />
+              <img
+                src="img/portfolio/screen__0006_scr.jpg"
+                alt="Project screenshot"
+              />
+              <img
+                src="img/portfolio/screen__0007_scr.jpg"
+                alt="Project screenshot"
+              />
+              <img
+                src="img/portfolio/screen__0008_scr.jpg"
+                alt="Project screenshot"
+              />
+              <img
+                src="img/portfolio/screen__0009_scr.jpg"
+                alt="Project screenshot"
+              />
+              <img
+                src="img/portfolio/screen__0010_scr.jpg"
+                alt="Project screenshot"
+              />
+              <img
+                src="img/portfolio/screen__0011_scr.jpg"
+                alt="Project screenshot"
+              />
+              <img
+                src="img/portfolio/screen__0012_scr.jpg"
+                alt="Project screenshot"
+              />
+              <img
+                src="img/portfolio/screen__0013_scr.jpg"
+                alt="Project screenshot"
+              />
+              <img
+                src="img/portfolio/screen__0014_scr.jpg"
+                alt="Project screenshot"
+              />
+              <img
+                src="img/portfolio/screen__0015_scr.jpg"
+                alt="Project screenshot"
+              />
+              <img
+                src="img/portfolio/screen__0016_scr.jpg"
+                alt="Project screenshot"
+              />
+              <img
+                src="img/portfolio/screen__0018_scr.jpg"
+                alt="Project screenshot"
+              />
+              <img
+                src="img/portfolio/screen__0019_scr.jpg"
+                alt="Project screenshot"
+              />
+              <img
+                src="img/portfolio/screen__0020_scr.jpg"
+                alt="Project screenshot"
+              />
+              <img
+                src="img/portfolio/screen__0021_scr.jpg"
+                alt="Project screenshot"
+              />
+              <img
+                src="img/portfolio/screen__0022_scr.jpg"
+                alt="Project screenshot"
+              />
+            </div>
           </div>
         </div>
-        <div class="detail-item">
-          <span class="icon" aria-hidden="true" style="-webkit-mask-image: url('icons/email.svg'); mask-image: url('icons/email.svg');">
-            <img src="icons/email.svg" width="36" height="36" alt="" />
-          </span>
-          <div>
-            <strong>Email</strong>
-            <p><a href="mailto:mfolkard@gmail.com">mfolkard@gmail.com</a></p>
+      </section>
+      <section
+        id="education"
+        class="cv-section"
+        aria-labelledby="education-heading"
+      >
+        <h3 id="education-heading">Education</h3>
+        <ul class="education">
+          <li>
+            <span
+              class="icon"
+              aria-hidden="true"
+              style="
+                -webkit-mask-image: url('icons/graduation-cap.svg');
+                mask-image: url('icons/graduation-cap.svg');
+              "
+            >
+              <img
+                src="icons/graduation-cap.svg"
+                width="36"
+                height="36"
+                alt=""
+              />
+            </span>
+            <strong
+              >Centre for Virtual Environments (Salford University):</strong
+            >
+            PhD Studentship in Intelligent Virtual Agents (Jan 1999 – Oct 1999)
+          </li>
+          <li>
+            <span
+              class="icon"
+              aria-hidden="true"
+              style="
+                -webkit-mask-image: url('icons/graduation-cap.svg');
+                mask-image: url('icons/graduation-cap.svg');
+              "
+            >
+              <img
+                src="icons/graduation-cap.svg"
+                width="36"
+                height="36"
+                alt=""
+              />
+            </span>
+            <strong>UMIST:</strong> B.Sc. Hons. in Computation (Oct 1993 – Jul
+            1996)
+          </li>
+          <li>
+            <span
+              class="icon"
+              aria-hidden="true"
+              style="
+                -webkit-mask-image: url('icons/school.svg');
+                mask-image: url('icons/school.svg');
+              "
+            >
+              <img src="icons/school.svg" width="36" height="36" alt="" />
+            </span>
+            <strong>Newcastle Royal Grammar School:</strong> A-Levels (1983 –
+            1993)
+          </li>
+        </ul>
+      </section>
+      <section
+        id="personal"
+        class="cv-section"
+        aria-labelledby="personal-heading"
+      >
+        <h3 id="personal-heading">Personal Details</h3>
+        <div class="personal-details">
+          <div class="detail-item">
+            <span
+              class="icon"
+              aria-hidden="true"
+              style="
+                -webkit-mask-image: url('icons/mobile.svg');
+                mask-image: url('icons/mobile.svg');
+              "
+            >
+              <img src="icons/mobile.svg" width="36" height="36" alt="" />
+            </span>
+            <div>
+              <strong>Mobile</strong>
+              <p>07763 986 485</p>
+            </div>
+          </div>
+          <div class="detail-item">
+            <span
+              class="icon"
+              aria-hidden="true"
+              style="
+                -webkit-mask-image: url('icons/email.svg');
+                mask-image: url('icons/email.svg');
+              "
+            >
+              <img src="icons/email.svg" width="36" height="36" alt="" />
+            </span>
+            <div>
+              <strong>Email</strong>
+              <p><a href="mailto:mfolkard@gmail.com">mfolkard@gmail.com</a></p>
+            </div>
+          </div>
+          <div class="detail-item">
+            <span
+              class="icon"
+              aria-hidden="true"
+              style="
+                -webkit-mask-image: url('icons/car.svg');
+                mask-image: url('icons/car.svg');
+              "
+            >
+              <img src="icons/car.svg" width="36" height="36" alt="" />
+            </span>
+            <div>
+              <strong>Driving</strong>
+              <p>Clean UK Licence</p>
+            </div>
+          </div>
+          <div class="detail-item">
+            <span
+              class="icon"
+              aria-hidden="true"
+              style="
+                -webkit-mask-image: url('icons/cake.svg');
+                mask-image: url('icons/cake.svg');
+              "
+            >
+              <img src="icons/cake.svg" width="36" height="36" alt="" />
+            </span>
+            <div>
+              <strong>Age</strong>
+              <p>50</p>
+            </div>
           </div>
         </div>
-        <div class="detail-item">
-          <span class="icon" aria-hidden="true" style="-webkit-mask-image: url('icons/car.svg'); mask-image: url('icons/car.svg');">
-            <img src="icons/car.svg" width="36" height="36" alt="" />
-          </span>
-          <div>
-            <strong>Driving</strong>
-            <p>Clean UK Licence</p>
-          </div>
-        </div>
-        <div class="detail-item">
-          <span class="icon" aria-hidden="true" style="-webkit-mask-image: url('icons/cake.svg'); mask-image: url('icons/cake.svg');">
-            <img src="icons/cake.svg" width="36" height="36" alt="" />
-          </span>
-          <div>
-            <strong>Age</strong>
-            <p>50</p>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer class="cv-footer" role="contentinfo">
-    <p>Matthew Folkard &mdash; Senior Software Engineer &mdash; <a href="mailto:mfolkard@gmail.com" aria-label="Contact Matthew Folkard via email">Contact</a></p>
-  </footer>
-  <script src="scripts.js"></script>
-</body>
+      </section>
+    </main>
+    <footer class="cv-footer" role="contentinfo">
+      <p>
+        Matthew Folkard &mdash; Senior Software Engineer &mdash;
+        <a
+          href="mailto:mfolkard@gmail.com"
+          aria-label="Contact Matthew Folkard via email"
+          >Contact</a
+        >
+      </p>
+    </footer>
+    <script src="scripts.js"></script>
+  </body>
 </html>

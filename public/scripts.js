@@ -38,3 +38,32 @@
     handleScroll();
   });
 })();
+
+// Burger menu functionality
+(function() {
+  const burger = document.querySelector('.burger-menu');
+  const mobileNav = document.getElementById('mobile-nav');
+  const closeBtn = document.querySelector('.close-mobile-nav');
+  if (!burger || !mobileNav || !closeBtn) return;
+
+  burger.addEventListener('click', function() {
+    mobileNav.classList.add('open');
+    burger.setAttribute('aria-expanded', 'true');
+    document.body.style.overflow = 'hidden';
+  });
+
+  closeBtn.addEventListener('click', function() {
+    mobileNav.classList.remove('open');
+    burger.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+  });
+
+  // Close mobile nav when a link is clicked
+  mobileNav.querySelectorAll('a').forEach(function(link) {
+    link.addEventListener('click', function() {
+      mobileNav.classList.remove('open');
+      burger.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    });
+  });
+})();

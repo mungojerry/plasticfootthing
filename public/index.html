@@ -11,7 +11,6 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <a href="#main-content" class="skip-link">Skip to main content</a>
   <header class="cv-header">
    
     <div class="header-content glass">
@@ -21,6 +20,23 @@
     </div>
   </header>
   <nav class="cv-nav" aria-label="CV sections navigation">
+    <a href="#skills" class="nav-pill">Core Skills</a>
+    <a href="#employment" class="nav-pill">Employment</a>
+    <a href="#projects" class="nav-pill">Projects</a>
+    <a href="#education" class="nav-pill">Education</a>
+    <a href="#personal" class="nav-pill">Personal Details</a>
+  </nav>
+
+  <!-- Burger menu button for mobile -->
+  <button class="burger-menu" aria-label="Open menu" aria-controls="mobile-nav" aria-expanded="false">
+    <span class="burger-bar"></span>
+    <span class="burger-bar"></span>
+    <span class="burger-bar"></span>
+  </button>
+
+  <!-- Mobile navigation overlay -->
+  <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile CV sections navigation">
+    <button class="close-mobile-nav" aria-label="Close menu">&times;</button>
     <a href="#skills" class="nav-pill">Core Skills</a>
     <a href="#employment" class="nav-pill">Employment</a>
     <a href="#projects" class="nav-pill">Projects</a>

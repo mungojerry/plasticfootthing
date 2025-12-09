@@ -747,7 +747,7 @@ body {
 }
 
 .collage-grid img:hover {
-  transform: scale(1.05);
+  transform: scale(1.5);
   box-shadow: var(--shadow-md);
   z-index: 1;
 }

@@ -3,25 +3,23 @@
   'use strict';
   
   const nav = document.querySelector('.cv-nav');
-  const header = document.querySelector('.cv-header');
+  if (!nav) return;
   
-  if (!nav || !header) return;
-  
-  // Get initial positions
-  let navTop = 0;
-  let headerBottom = 0;
+  // Store the initial offset position of the nav
+  let navOffsetTop = 0;
   
   function updatePositions() {
-    const headerRect = header.getBoundingClientRect();
-    headerBottom = header.offsetHeight;
-    navTop = header.offsetHeight;
+    // Only update if nav is not stuck (to get the original position)
+    if (!nav.classList.contains('is-stuck')) {
+      navOffsetTop = nav.offsetTop;
+    }
   }
   
   function handleScroll() {
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     
-    // Add stuck class when scrolled past the header
-    if (scrollTop >= headerBottom) {
+    // Add stuck class when scrolled past the nav's original position
+    if (scrollTop > navOffsetTop) {
       nav.classList.add('is-stuck');
     } else {
       nav.classList.remove('is-stuck');
@@ -32,7 +30,10 @@
   updatePositions();
   
   window.addEventListener('scroll', handleScroll, { passive: true });
-  window.addEventListener('resize', updatePositions);
+  window.addEventListener('resize', () => {
+    nav.classList.remove('is-stuck');
+    setTimeout(updatePositions, 0);
+  });
   window.addEventListener('load', () => {
     updatePositions();
     handleScroll();

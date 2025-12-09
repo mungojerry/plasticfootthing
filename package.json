@@ -1,0 +1,11 @@
+{
+  "name": "pm-site",
+  "version": "1.0.0",
+  "description": "Matthew Folkard portfolio site",
+  "scripts": {
+    "dev": "live-server public --port=8080 --host=localhost --open=/index.html"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}

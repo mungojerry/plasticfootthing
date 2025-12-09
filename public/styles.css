@@ -130,7 +130,7 @@ body {
   position: fixed;
   top: 1rem;
   left: 1rem;
-  z-index: 9999;
+  z-index: 100;
   width: 44px;
   height: 44px;
   background: var(--accent);
@@ -964,9 +964,9 @@ button:focus,
   .cv-nav,
   .burger-menu,
   .mobile-nav {
-    display: none;
+    display: none;   
   }
-  
+
   .cv-section {
     page-break-inside: avoid;
     box-shadow: none;

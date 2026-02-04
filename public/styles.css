@@ -32,7 +32,6 @@
   --gradient-card: linear-gradient(135deg, rgba(30, 41, 59, 0.9) 0%, rgba(51, 65, 85, 0.9) 100%);
   --gradient-skill: linear-gradient(135deg, #1e293b 0%, #334155 100%);
   --gradient-skill-hover: linear-gradient(135deg, #06b6d4 0%, #8b5cf6 100%);
-  --gradient-skill-hover-full: linear-gradient(135deg, #06b6d4 0%, #8b5cf6 100%);
   --gradient-job: linear-gradient(135deg, #1e293b 0%, #334155 100%);
   --gradient-project: linear-gradient(135deg, rgba(30, 41, 59, 0.9) 0%, rgba(51, 65, 85, 0.9) 100%);
   --gradient-project-hover: linear-gradient(135deg, rgba(51, 65, 85, 0.95) 0%, rgba(71, 85, 105, 0.95) 100%);
@@ -70,7 +69,6 @@
   --shadow-button-hover: 0 6px 20px rgba(6, 182, 212, 0.4);
   
   /* Text Shadows */
-  --text-shadow-xs: 0 1px 3px rgba(0, 0, 0, 0.3);
   --text-shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
   --text-shadow-md: 0 2px 8px rgba(0, 0, 0, 0.4);
   --text-shadow-lg: 0 4px 16px rgba(0, 0, 0, 0.5), 0 2px 4px rgba(0, 0, 0, 0.6);
@@ -521,6 +519,21 @@ body {
   mask-position: center;
 }
 
+/* Reusable icon classes - DRY */
+.icon-lightning { -webkit-mask-image: url('icons/lightning.svg'); mask-image: url('icons/lightning.svg'); }
+.icon-puzzle { -webkit-mask-image: url('icons/puzzle.svg'); mask-image: url('icons/puzzle.svg'); }
+.icon-clock { -webkit-mask-image: url('icons/clock.svg'); mask-image: url('icons/clock.svg'); }
+.icon-link { -webkit-mask-image: url('icons/link.svg'); mask-image: url('icons/link.svg'); }
+.icon-checkmark { -webkit-mask-image: url('icons/checkmark.svg'); mask-image: url('icons/checkmark.svg'); }
+.icon-test-tube { -webkit-mask-image: url('icons/test-tube.svg'); mask-image: url('icons/test-tube.svg'); }
+.icon-handshake { -webkit-mask-image: url('icons/handshake.svg'); mask-image: url('icons/handshake.svg'); }
+.icon-graduation-cap { -webkit-mask-image: url('icons/graduation-cap.svg'); mask-image: url('icons/graduation-cap.svg'); }
+.icon-school { -webkit-mask-image: url('icons/school.svg'); mask-image: url('icons/school.svg'); }
+.icon-mobile { -webkit-mask-image: url('icons/mobile.svg'); mask-image: url('icons/mobile.svg'); }
+.icon-email { -webkit-mask-image: url('icons/email.svg'); mask-image: url('icons/email.svg'); }
+.icon-car { -webkit-mask-image: url('icons/car.svg'); mask-image: url('icons/car.svg'); }
+.icon-cake { -webkit-mask-image: url('icons/cake.svg'); mask-image: url('icons/cake.svg'); }
+
 .icon svg,
 .icon img {
   display: none;
@@ -550,7 +563,7 @@ body {
 
 .skills li:hover {
   box-shadow: var(--shadow-lg);
-  background: var(--gradient-skill-hover-full);
+  background: var(--gradient-skill-hover);
   color: var(--white);
   transform: translateX(5px);
   border-color: var(--accent2);
@@ -617,7 +630,7 @@ body {
   font-weight: 700;
   color: var(--accent);
   font-size: 1.2rem;
-  text-shadow: var(--text-shadow-xs);
+  text-shadow: var(--text-shadow-sm);
   display: block;
   margin-bottom: 0.3rem;
 }
@@ -920,7 +933,7 @@ body {
 
 .education li:hover {
   box-shadow: var(--shadow-lg);
-  background: var(--gradient-skill-hover-full);
+  background: var(--gradient-skill-hover);
   color: var(--white);
   transform: translateX(8px);
 }

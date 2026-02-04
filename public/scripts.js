@@ -1,3 +1,5 @@
+console.log('=== SCRIPTS.JS LOADED ===');
+
 // Sticky navigation functionality
 (function() {
   'use strict';
@@ -68,3 +70,104 @@
     });
   });
 })();
+
+console.log('Scripts.js loaded');
+
+// Function to initialize collage modal functionality
+function initCollageModal() {
+  console.log('Initializing collage modal');
+  
+  const collageItems = document.querySelectorAll('.collage-item');
+  console.log('Found ' + collageItems.length + ' collage items');
+  
+  if (collageItems.length === 0) {
+    console.log('No collage items found');
+    return;
+  }
+
+  collageItems.forEach(function(item, index) {
+    const thumbnail = item.querySelector('img');
+    const modal = item.querySelector('.image-modal');
+    const overlay = item.querySelector('.collage-overlay');
+    
+    if (!thumbnail || !modal) {
+      return;
+    }
+
+    thumbnail.addEventListener('click', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      
+      const modalClone = modal.cloneNode(true);
+      modalClone.id = 'active-modal';
+      
+      if (overlay) {
+        const title = overlay.querySelector('h5');
+        const desc = overlay.querySelector('p');
+        
+        let titleText = title ? title.textContent : '';
+        let descText = desc ? desc.textContent : '';
+        
+        let modalInfo = modalClone.querySelector('.modal-info');
+        if (!modalInfo) {
+          modalInfo = document.createElement('div');
+          modalInfo.className = 'modal-info';
+          modalClone.appendChild(modalInfo);
+        }
+        
+        modalInfo.innerHTML = '<h5>' + titleText + '</h5><p>' + descText + '</p>';
+      }
+      
+      if (!modalClone.querySelector('.close-modal-btn')) {
+        const closeBtn = document.createElement('button');
+        closeBtn.className = 'close-modal-btn';
+        closeBtn.setAttribute('aria-label', 'Close image');
+        closeBtn.innerHTML = '&times;';
+        modalClone.insertBefore(closeBtn, modalClone.firstChild);
+      }
+      
+      document.body.appendChild(modalClone);
+      modalClone.style.display = 'flex';
+      
+      modalClone.addEventListener('click', function(ev) {
+        if (ev.target === modalClone || ev.target.classList.contains('close-modal-btn')) {
+          modalClone.remove();
+        }
+      });
+    });
+  });
+}
+
+// Load external HTML sections
+document.addEventListener('DOMContentLoaded', function() {
+  console.log('DOM Content Loaded - loading external sections');
+  
+  // Load projects section
+  const projectsContainer = document.getElementById('projects-container');
+  if (projectsContainer) {
+    fetch('sections/projects.html')
+      .then(function(response) {
+        if (!response.ok) throw new Error('Failed to load projects section');
+        return response.text();
+      })
+      .then(function(html) {
+        projectsContainer.innerHTML = html;
+        console.log('Projects section loaded');
+        // Initialize collage after content is loaded
+        initCollageModal();
+      })
+      .catch(function(error) {
+        console.error('Error loading projects:', error);
+      });
+  }
+
+  // Close modal when pressing Escape key
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+      const activeModal = document.getElementById('active-modal');
+      if (activeModal) {
+        activeModal.remove();
+      }
+    }
+  });
+});

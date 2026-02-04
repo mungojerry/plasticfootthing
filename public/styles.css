@@ -730,6 +730,16 @@ body {
   padding: 1rem;
 }
 
+.project-collage h4 {
+  margin-bottom: 0.5rem;
+}
+
+.project-collage p {
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  color: var(--text-light);
+}
+
 .collage-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
@@ -737,19 +747,150 @@ body {
   width: 100%;
 }
 
-.collage-grid img {
+.collage-item {
+  position: relative;
   width: 100%;
   height: 80px;
-  object-fit: cover;
+  overflow: hidden;
   border-radius: 0.5rem;
-  transition: all var(--transition-normal);
   box-shadow: var(--shadow-sm);
 }
 
-.collage-grid img:hover {
-  transform: scale(1.5);
-  box-shadow: var(--shadow-md);
-  z-index: 1;
+.collage-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: all var(--transition-normal);
+  cursor: pointer;
+}
+
+.collage-item:hover img {
+  transform: scale(1.05);
+}
+
+.collage-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(20, 83, 45, 0.95), rgba(20, 83, 45, 0.7), transparent);
+  color: white;
+  padding: 0.5rem;
+  opacity: 0;
+  transition: opacity var(--transition-normal);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+  pointer-events: none;
+}
+
+.collage-overlay h5 {
+  margin: 0;
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.collage-overlay p {
+  display: none;
+}
+
+.collage-item:hover .collage-overlay {
+  opacity: 1;
+ 
+}
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes imageScaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.image-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.9);
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  padding: 2rem;
+  box-sizing: border-box;
+  overflow: auto;
+  animation: modalFadeIn 0.3s ease-out forwards;
+}
+
+.image-modal img {
+  max-width: 90%;
+  max-height: 70vh;
+  object-fit: contain;
+  border-radius: 0.5rem;
+  animation: imageScaleIn 0.4s ease-out forwards;
+  cursor: pointer;
+}
+
+.modal-info {
+  color: white;
+  margin-top: 1.5rem;
+  text-align: center;
+  max-width: 600px;
+}
+
+.modal-info h5 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #22c55e;
+}
+
+.modal-info p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.close-modal-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  color: white;
+  font-size: 2rem;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  padding: 0;
+}
+
+.close-modal-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.6);
 }
 
 /* ============================================

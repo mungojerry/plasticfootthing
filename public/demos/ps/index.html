@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--[if lt IE 9]>
+    <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+    <![endif]-->
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Plastic Saucer</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+
+    <style>
+        body {
+            padding: 0px;
+            margin: 0px;
+            background-color: #723C1A;
+        }
+
+        #tabletcanvas {
+            width: 880px;
+            height: 440px;
+            position: absolute;
+            margin: 0 auto;
+            left: 50%;
+            top: 50%;
+            margin-top: -220px;
+            margin-left: -440px;
+
+            z-index: 1;
+            background-color: #000000;
+        }
+
+        #mobilecanvas {
+            width: 440px;
+            height: 240px;
+            position: absolute;
+            margin: 0 auto;
+            top: 50%;
+            margin-top: -120px;
+            z-index: 2;
+            display: none;
+            background-color: #000000;
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+
+<script>window.jQuery || document.write('<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"><\/script>')</script>
+<div id="fullScreenContainer">
+    <div id="canvasholder" style="position:absolute; left:0px; right:0px; width:100%; height:100%; background-color:#000;">
+        <canvas id="tabletcanvas" width="880" height="440">
+            Your browser doesn't support canvas. Please download IE9+ on <a href="http://ie.microsoft.com/testdrive">IE Test
+            Drive</a>
+        </canvas>
+    </div>
+</div>
+
+<script src="plasticsaucer.js"></script>
+</body>
+</html>

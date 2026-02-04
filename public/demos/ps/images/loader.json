@@ -1,0 +1,31 @@
+{
+"images": ["images/loader.png"],
+"frames": [
+
+    [154, 306, 74, 74], 
+    [78, 306, 74, 74], 
+    [2, 382, 74, 74], 
+    [2, 306, 74, 74], 
+    [154, 230, 74, 74], 
+    [78, 230, 74, 74], 
+    [2, 230, 74, 74], 
+    [154, 154, 74, 74], 
+    [78, 154, 74, 74], 
+    [2, 154, 74, 74], 
+    [154, 78, 74, 74], 
+    [78, 78, 74, 74], 
+    [2, 78, 74, 74], 
+    [154, 2, 74, 74], 
+    [78, 2, 74, 74], 
+    [2, 2, 74, 74], 
+    [154, 306, 74, 74]
+],
+"animations": {
+    
+        "loader":[0,16]
+},
+"texturepacker": [
+        "SmartUpdateHash: $TexturePacker:SmartUpdate:9d78fa94dda5aade58a7af6f8e730825$",
+        "Created with TexturePacker (http://www.texturepacker.com) for EasalJS"
+]
+}

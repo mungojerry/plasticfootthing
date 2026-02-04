@@ -1,0 +1,64 @@
+{
+    "mainmenu": {
+        "image": "logo",
+        "items": [
+            {
+                "title": "> play <",
+                "action": "GetReady"
+            },
+
+            {
+                "title": "> info <",
+                "action": "Info"
+            },
+
+            {
+                "title": "Nyan",
+                "action": "SwitchSkin",
+                "size":0.4
+            }
+        ]
+    },
+
+    "info": {
+        "title": "INFO",
+        "items": [
+            {
+                "title": "developed by"
+            },
+
+            {
+                "title": "Big Foot Thing"
+            },
+
+            {
+                "title": "> Back <",
+                "action": "MainMenu"
+            }
+        ]
+    },
+    "gameover": {
+        "title": "GAME OVER",
+        "items": [
+            {
+                "title": "> OK <",
+                "action": "MainMenu"
+            }
+        ]
+    },
+
+    "getready": {
+        "title": "GET READY",
+        "items": [
+            {
+                "title": "click and hold",
+                "size": 0.5
+            },
+            {
+                "title": "for altitude",
+                "size": 0.5
+            }
+        ]
+    }
+
+}
